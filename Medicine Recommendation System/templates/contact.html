@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      label {
+        background-color: transparent !important;
+      }
+
+      body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('static/BG.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .card {
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background-color: rgba(128, 128, 128, 0.85) !important; /* Force the background to match */
+        color: white;
+      }
+
+      .card a {
+        color: #ccefff;
+      }
+
+      .form-label,
+      .form-control {
+        background-color: #bbbbbb;
+        color: white;
+        border: none;
+      }
+
+      .form-control:focus {
+        background-color: #bbbbbb;
+        color: white;
+        box-shadow: none;
+        border: 1px solid #cccccc;
+      }
+
+      .form-control::placeholder {
+        color: #444;
+      }
+
+      .btn-custom-teal {
+  background-color: #00d6d6 !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-custom-teal:hover {
+  background-color: #00bfbf !important;
+  color: white !important;
+}
+
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container mt-5">
+     <h1 class="text-center mb-4 fw-bold" style="color: #00d6d6;">Contact</h1>
+
+      <div class="row">
+        <!-- Get in Touch Box -->
+        <div class="col-md-6 mb-4">
+          <div class="card p-4">
+            <h4 style="color: #00d6d6;">Get in Touch</h4>
+            <p><strong style="color: white;">Alphy Joby</strong></p>
+<p style="color: white;">If you have any questions, suggestions, or feedback about AI Doctor, feel free to reach out. We'd love to hear from you!</p>
+<p style="color: white;"><strong>Email:</strong> <a href="mailto:alphyjoby11@gmail.com" style="color: #00d6d6;">alphyjoby11@gmail.com</a></p>
+<p style="color: white;"><strong>Phone:</strong> +91-8277286303</p>
+
+          </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h4 style="color: #00d6d6;">Send a Message</h4>
+            <form method="POST" action="/contact">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-custom-teal">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
